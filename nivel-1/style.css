@@ -4,7 +4,7 @@
 
 body {
   box-sizing: border-box; }
-  
+
 
 .bloque1 {
 background-color: black;
@@ -75,63 +75,72 @@ justify-content: space-around;
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
-    justify-content: center;
-    align-items: stretch;
+    /* justify-content: center; */
+    /* align-items: stretch; */
     }
 
     .gris {
-        flex: 2;
+        flex-basis: 60%;
         background-color: #54566e;
-        margin: 20;
         display: flex;
-    
+        flex-wrap: wrap;
+        flex-grow: 1;
+        margin:20px;
     }
-        .gris_columna1 {
-            flex: 1 auto;
+    
+        .gris_fila1 {
             background-color: #4b6cc5;
-            height: 20px;
-        
+            flex: 1 300px;
+            margin: 10px;
+            padding: 10px;
+                     
         }
-        .gris_columna2 {
-            flex: 1 auto;
+        .gris_fila2 {
             background-color: #4b6cc5;
-            height: 20px;
-        
+            flex: 1 300px;
+            margin: 10px;
+            padding: 10px;
         }    
-        .gris_columna3 {
-            flex: 1 auto;
+        .gris_fila3 {
             background-color: #4b6cc5;
-            height: 20px;
-        
+            flex: 1 300px;
+            margin: 10px;
+            padding: 10px;
+            
         }
-        .gris_columna4 {
-            flex: 1 auto;
+        .gris_fila4 {
             background-color: #4b6cc5;
-            height: 20px;
-        
+            flex: 1 300px;
+            margin: 10px;
+            padding: 10px;
         }
-        .gris_columna5 {
-            flex: 1 auto;
+
+        .gris_fila5 {
+   
             background-color: #65b6ca;
-            height: 20px;
+            flex: 1 300px;
+            margin: 10px;
+            padding: 10px;
         
         }
 
     .rojo {
-        flex: 1;
+        flex-basis: 40%;
         background-color: #be4040;
         margin: 20;
         display: flex;
+        flex-direction: column; 
+
     }
         .rojo_columna1{
-            flex: 1 auto;
             background-color: #ebcf73;
-            height: 20px;
+            height: 30px;
+            margin: 10px;
         }
-        .rojo_columna1{
-            flex: 1 auto;
+        .rojo_columna2{
             background-color: #ebcf73;
-            height: 20px;
+            height: 30px;
+            margin:10px;
         }
 
 
