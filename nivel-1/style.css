@@ -5,16 +5,19 @@
 body {
   box-sizing: border-box; }
 
-
+@media only screen and (min-width: 768px) {
+.flex_container {
+    max-width: 1200px;
+    border-color: white;
+}
 .bloque1 {
 background-color: black;
-width: 1200px;
 height: 250px;
 display: flex;
 flex-direction: column;
 padding: 20px;
 justify-content: space-around;
-margin-bottom: 20px;;
+margin-bottom: 20px;
 
 }
 
@@ -68,7 +71,6 @@ margin-bottom: 20px;;
 
 .bloque2 {
     background-color: black;
-    width: 1200px;
     height: 250px;
     display: flex;
     flex-direction: row;
@@ -142,7 +144,6 @@ margin-bottom: 20px;;
 
 .bloque3 {
     background-color: black;
-    width: 1200px;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -154,3 +155,12 @@ margin-bottom: 20px;;
         height: 90px;
     }
         
+  }
+/*tablets*/
+  @media only screen and (min-width: 600px) {
+
+  }
+
+
+/*móviles*/
+  @media only screen and (max-width: 600px) {}
