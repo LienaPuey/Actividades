@@ -267,6 +267,9 @@ body {
                     margin-right: 0;
                     padding: 0;
                 }
+                  .sidebar {
+                    margin-top: 0.5rem;
+                  }
         }
         @media all and (max-width: 400px) {
             .cards {
@@ -336,5 +339,6 @@ body {
                 }
             .sidebar {
                 flex-direction: column;
+                margin-top: 0.5rem;
             }
         }
