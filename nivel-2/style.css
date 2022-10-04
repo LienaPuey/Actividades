@@ -60,7 +60,7 @@ body {
             .nav {
                 flex: 5 1 auto;                
             }
-            .nav a {
+            .navtext {
                 color: rgb(88, 85, 85);
                 font-size: 15px;
                 padding: 0 3rem;
@@ -193,6 +193,7 @@ body {
             color: rgb(107, 106, 106);
         }
 
+        
         @media all and (max-width: 800px){
             .content {
                 flex-direction: column;
@@ -211,8 +212,128 @@ body {
             .cards {
                 flex-direction: column;
             }
+            .header {
+                background: url(assets/header.jpg);
+                background-position: center;
+                background-attachment: contain;
+                display: flex;
+                flex-flow: row wrap;
+                height: 12rem;
+                margin-bottom: 10px;
+                 
+            }
+            .menu {
+                display: flex;
+                flex-flow: row;
+                height:auto;
+                align-items:stretch;
+                margin-bottom: 0;
+            }
+    
+            .favicon {
+                width:100%;
+                padding: 1.2rem;
+                align-self: flex-start;   
+                flex: 1 1 auto;             
+            }
+            .faviconimg {
+                width:40%;
+            }
+            .faviconimg:hover{
+                transform: scale(1);
+            }
+           
+            .nav {
+                visibility: hidden;
+            }
+            .socialmedia {
+                visibility: hidden;
+            }
+            .titulo {
+                background: rgba(158, 158, 158, 0.164);
+                height:auto;
+                padding: 0;
+                margin: 0;
+                align-self: flex-end 
+                }
+                h1{
+                    color: #fa8a6ed7;
+                    font-family: 'Lora', serif;
+                    animation:none;
+                    font-size: 1.5rem;
+                
+                }
+                .cards{
+                    margin-right: 0;
+                    padding: 0;
+                }
         }
         @media all and (max-width: 400px) {
+            .cards {
+                flex-direction: column;
+            }
+            .header {
+                background: url(assets/header.jpg);
+                background-position: center;
+                background-attachment: contain;
+                display: flex;
+                flex-flow: row wrap;
+                height: 12rem;
+                margin-bottom: 5px;
+                 
+            }
+            .menu {
+                display: flex;
+                flex-flow: row;
+                height:4rem;
+                margin-bottom: 0;
+            }
+    
+            .favicon {
+                width:50%;
+                padding: 1.2rem;
+                align-self: flex-start;   
+                flex: 1 1 auto;             
+            }
+            .faviconimg {
+                width:2rem;
+            }
+            .faviconimg:hover{
+                transform: scale(1);
+            }
+           
+            .nav {
+                visibility: hidden;
+            }
+            .socialmedia {
+                visibility: hidden;
+            }
+            .titulo {
+                background: rgba(158, 158, 158, 0.164);
+                height:auto;
+                padding: 0;
+                margin: 0;
+                align-self: center; 
+                }
+                h1{
+                    color: #fa8a6ed7;
+                    font-family: 'Lora', serif;
+                    animation:none;
+                    font-size: 0.8rem;
+                
+                }
+                .cards{
+                    margin-right: 0;
+                    padding: 0;
+                }
+                  
+                .cardtext {
+                    column-count: 1;
+                    column-gap: 0;
+                    text-align: justify;
+                    color: rgb(92, 92, 92);
+                    margin-bottom: 1rem;     
+                }
             .sidebar {
                 flex-direction: column;
             }
