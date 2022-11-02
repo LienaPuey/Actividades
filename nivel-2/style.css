@@ -1,6 +1,5 @@
 *{
     margin: 0 0 0;
-    /* padding: 10px; */
     box-sizing: border-box;
     text-decoration: none;
 
@@ -47,6 +46,7 @@ body {
 
             .favicon {
                 flex: 0 1 auto;
+                padding: 0.5rem;
                 
             }
             .faviconimg {
@@ -58,6 +58,8 @@ body {
             }
            
             .nav {
+                display: flex;
+                justify-content: center;
                 flex: 5 1 auto;                
             }
             .navtext {
@@ -187,7 +189,8 @@ body {
         justify-content: center;
     }
         .footer_text {
-            background: rgb(255, 255, 255);            width: 95%;
+            background: rgb(255, 255, 255);            
+            width: 95%;
             padding: 1rem;
             text-align: center;
             color: rgb(107, 106, 106);
@@ -199,8 +202,35 @@ body {
                 flex-direction: column;
             }
             .menu {
-                flex-direction: column;
-                height: auto;
+                flex-flow: row wrap;
+                height: 3rem;
+            }
+            .header {
+                display: flex;
+                flex-flow: row wrap;
+                height: 21rem;
+                margin-bottom: 0.5rem;                 
+            }
+            .favicon {
+                flex: 1 1 30;
+            }
+
+            .nav {
+                flex: 1 1 30;
+            }
+            .socialmedia {
+                flex: 1 1 30;
+            }
+
+            .titulo {
+                height:auto;
+                padding: 0.5rem;
+                margin: 0 0.7rem;
+                align-self: flex-end 
+            }
+
+            .cards {
+                margin: 0;
             }
             .sidebar {
                 display: flex;
@@ -213,9 +243,6 @@ body {
                 flex-direction: column;
             }
             .header {
-                background: url(assets/header.jpg);
-                background-position: center;
-                background-attachment: contain;
                 display: flex;
                 flex-flow: row wrap;
                 height: 12rem;
@@ -224,20 +251,17 @@ body {
             }
             .menu {
                 display: flex;
-                flex-flow: row;
-                height:auto;
+                height:2rem;
                 align-items:stretch;
                 margin-bottom: 0;
             }
-    
+
             .favicon {
-                width:100%;
-                padding: 1.2rem;
-                align-self: flex-start;   
-                flex: 1 1 auto;             
+                padding: 0.5rem;
+                align-self: flex-start;                
             }
             .faviconimg {
-                width:40%;
+                width: 25%;
             }
             .faviconimg:hover{
                 transform: scale(1);
@@ -250,15 +274,12 @@ body {
                 visibility: hidden;
             }
             .titulo {
-                background: rgba(158, 158, 158, 0.164);
                 height:auto;
                 padding: 0;
-                margin: 0;
+                margin: 0 0.5rem;
                 align-self: flex-end 
                 }
                 h1{
-                    color: #fa8a6ed7;
-                    font-family: 'Lora', serif;
                     animation:none;
                     font-size: 1.5rem;
                 
@@ -276,9 +297,6 @@ body {
                 flex-direction: column;
             }
             .header {
-                background: url(assets/header.jpg);
-                background-position: center;
-                background-attachment: contain;
                 display: flex;
                 flex-flow: row wrap;
                 height: 12rem;
@@ -293,13 +311,13 @@ body {
             }
     
             .favicon {
-                width:50%;
-                padding: 1.2rem;
+                width: 100%;
+                padding: 0.5rem;
                 align-self: flex-start;   
                 flex: 1 1 auto;             
             }
             .faviconimg {
-                width:2rem;
+                width:3rem;
             }
             .faviconimg:hover{
                 transform: scale(1);
@@ -312,15 +330,12 @@ body {
                 visibility: hidden;
             }
             .titulo {
-                background: rgba(158, 158, 158, 0.164);
-                height:auto;
-                padding: 0;
-                margin: 0;
-                align-self: center; 
+                height: 3rem;
+                padding: 0.5rem;
+                margin: 0 0.5rem;
+                align-self: end; 
                 }
                 h1{
-                    color: #fa8a6ed7;
-                    font-family: 'Lora', serif;
                     animation:none;
                     font-size: 0.8rem;
                 
@@ -334,7 +349,6 @@ body {
                     column-count: 1;
                     column-gap: 0;
                     text-align: justify;
-                    color: rgb(92, 92, 92);
                     margin-bottom: 1rem;     
                 }
             .sidebar {
