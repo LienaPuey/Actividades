@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .grid_container {
+        border-color: black;
+        margin: 1rem 1rem 0;
+        height: 100vh;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-rows: 2fr 6fr 1fr;
+    }
+    .header {
+        background-color: black;      
+    }
+    
+        .menu{
+            background-color: #545B86;
+            height: 90px;
+            padding: 20px;
+            }
+            .favicon{
+                background-color: #c44343;
+                height: 30px;
+                margin-right: 10px;
+    
+            }
+            .nav{
+                background-color: #c44343;
+                height: 30px;
+                margin-right: 10px;
+    
+            }
+            .socialmedia{
+                background-color: #c44343;
+                height: 30px;
+    
+            }
+    
+        .titulo {
+            background-color: #e08823;
+            height: 90px;
+            
+        }
+            .titulo1 {
+                background-color: #ffc039;
+                height: 30px;
+                margin: 20px;
+    
+            }
+    
+    
+    .content {
+        background-color: black;
+        padding: 20px;
+    
+    
+        }
+    
+        .cards {
+            background-color: #54566e;
+            margin-right: 20px;
+            
+        }
+        
+            .card {
+                background-color: #4b6cc5;
+                margin: 10px;
+                padding: 10px;
+                         
+            }
+            .card_footer {
+              background-color: #4b6cc5;
+              margin: 10px;
+              padding: 10px;
+            }
+    
+        .sidebar{
+            background-color: #be4040;
+        }
+            .sidebar_text{
+                background-color: #ebcf73;
+                height: 30px;
+            }
+    
+    
+    .footer {
+        background-color: black;
+        padding: 20px;
+            
+     }
+        .footer_text {
+            background-color: #ebc41a;
+            height: 30px;
+        }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
+  
+          
+    
+ 
