@@ -32,7 +32,6 @@
       margin: 2rem 4rem 0;
       height: 100vh;
       display: grid;
-      grid-gap: 1rem;
       grid-template-rows: 3fr 5fr 1fr;
     }
     .header {
@@ -40,7 +39,7 @@
       background-position: center;
       background-attachment: contain;
       display: grid;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       grid-gap: 5rem;
       height: 25rem;
       grid-template-rows: 1fr 3fr;           
@@ -52,10 +51,10 @@
         grid-template-columns: 1fr  5fr 1fr;
       }
             .favicon {
-              padding: 1rem;             
+              padding: 1.2rem;              
             }
               .faviconimg {
-                width: 50%;
+                width: 60%;
                 transition: transform .2s;
               }
               .faviconimg:hover{
@@ -176,6 +175,9 @@
               padding: 0.5rem;
               grid-column: 1 / -1;
             }
+            .textfootercard {
+              text-align: center;
+            }
     
         .sidebar{
           background: rgba(158, 158, 158, 0.164);
@@ -192,7 +194,7 @@
             .footer {
               background: rgba(158, 158, 158, 0.164);
               display: flex;
-              justify-content: center;
+              align-items: center;
           }
               .footer_text {
                 background: rgb(255, 255, 255);            
@@ -210,8 +212,47 @@
   */
   
   @media (min-width: 1025px) and (max-width: 1280px) {
+    .grid_container {
+      margin: 1rem 2rem 0;
+    }
+    .header {
+      margin-bottom: 1rem;
+      grid-gap: 0rem;
+      height: 19rem;         
+    }
+          .favicon {
+            padding: 1.2rem;              
+          }
+            .faviconimg {
+              width: 60%;
+            }
+
+          .nav{        
+            padding: 1rem;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;    
+          }
+            .navtext {
+              margin: 0 0.5rem;
+              display: flex;
+              flex-flow: column wrap;
+            }
+            i {
+              margin:5px auto;
+              display:inline;
+              }
+
+    .content {
+      background: rgba(158, 158, 158, 0.164);
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
     
-    /* CSS */
+    .cards {
+      margin-right: 0;
+    }
     
   }
   
