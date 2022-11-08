@@ -4,7 +4,35 @@ $secondary: #FA5959;
 //import boostrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-.polygon {
-    background: $primary;
-    -webkit-clip-path: inset(10% 0% round 100% 0% 100% 100% 10% 100% round);
+*{
+    margin: 0;
+    padding: 0;
 }
+.container_img_pol {
+    position: relative;
+}
+.imagen {
+    z-index: 2;
+    position:absolute;
+    left: 40px; 
+    top: 40px;
+    }
+
+.imagen_img{
+    border: 1rem solid black;
+    border-radius: 0.5rem;
+    // border-image: linear-gradient(to right, rgb(39, 39, 39), black);
+
+}
+.polygon {
+    margin-bottom: 2rem;
+    height: 20rem;
+    background: $primary;
+    margin-right: 0;
+    clip-path: inset(100% 100% 100% 100% round 10rem 0rem 0rem 10rem);
+    z-index: 1;
+    position: relative;
+    left: 80px; 
+    top: 90px;
+}
+
