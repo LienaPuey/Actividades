@@ -1,8 +1,7 @@
 //custom
 $primary:#5265E1;
 $secondary: #FA5959;
-//import boostrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 
 *{
     margin: 0;
@@ -17,19 +16,21 @@ $secondary: #FA5959;
     padding: 0 2rem;
     margin-right: 2rem;
 }
-.btn_login {
+#boton {
     padding: 0 2rem;
     margin-right: 2rem;
     background-color: $secondary;
     color: white;
+
+    &:hover {
+        border-color: $secondary !important;
+        background-color: white !important;
+        color: $secondary !important;
+    }
 }
- .btn_login :hover {
-        border-color: $secondary;
-        background-color: white;
-        color: $secondary;
- }
-
-
+.col_txt {
+    padding: 3rem;
+}
 .col {
     padding:7rem;
 }
@@ -42,25 +43,24 @@ $secondary: #FA5959;
     position:absolute;
     left: 40px; 
     top: 40px;
-    }
+    
 
-.imagen_img{
-    background: linear-gradient(rgb(63, 63, 63), rgb(63, 63, 63)) padding-box, linear-gradient(to right, rgb(68, 68, 68), rgb(0, 0, 0)) border-box;
-    border-radius: 1.8rem;
-    border: 0.8rem solid transparent;
-    -webkit-box-shadow: 0px 16px 35px -4px rgba(0,0,0,0.41);
-    -moz-box-shadow: 0px 16px 35px -4px rgba(0,0,0,0.41);
-    box-shadow: 0px 16px 35px -4px rgba(0,0,0,0.41);
+    &_img {
+        background: linear-gradient(rgb(63, 63, 63), rgb(63, 63, 63)) padding-box, linear-gradient(to right, rgb(68, 68, 68), rgb(0, 0, 0)) border-box;
+        border-radius: 1.8rem;
+        border: 0.8rem solid transparent;
+        -webkit-box-shadow: 0px 16px 35px -4px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 16px 35px -4px rgba(0,0,0,0.41);
+        box-shadow: 0px 16px 35px -4px rgba(0,0,0,0.41);
+        }
 }
-
 .polygon {
     height: 20rem;
-    background: $primary;
-    -webkit-clip-path:inset(100% 100% 100% 100% round 10rem 0rem 0rem 10rem);
-    clip-path: inset(100% 100% 100% 100% round 10rem 0rem 0rem 10rem);
     z-index: 1;
     position: relative;
     left: 15rem; 
     top: 12rem;
 }
 
+//import boostrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
