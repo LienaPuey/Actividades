@@ -15,7 +15,7 @@
   ##Screen = 1281px to higher resolution desktops
 */
 
-/* @media (min-width: 1281px) { */
+ 
   @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -27,7 +27,7 @@
         opacity: 1;
     }
 }
-  
+  @media (min-width: 1281px) { 
     .grid_container {
       margin: 2rem 4rem 0;
       height: 100vh;
@@ -105,7 +105,7 @@
           background: rgba(158, 158, 158, 0.164);
           text-align: center;
           padding: 2rem;
-          margin: 5rem 4rem 0rem;
+          margin: 3rem 4rem 0rem;
           
         }
           h1{
@@ -204,7 +204,7 @@
                 color: rgb(107, 106, 106);
               }
     
-  /* } */
+  } 
   
   /* 
     ##Device = Laptops, Desktops
