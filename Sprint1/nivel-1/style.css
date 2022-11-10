@@ -21,7 +21,7 @@ body {
 
     .azul {
         background-color: #545B86;
-        height: 90px;
+        height: 4rem;
         margin-bottom: 20px;
         display: flex;
         padding: 20px;
@@ -53,7 +53,7 @@ body {
 
     .naranja {
         background-color: #e08823;
-        height: 90px;
+        height: 6rem;
         display: flex;
         
     }
